@@ -1,0 +1,135 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  
+  background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*ps5qtfZtd1jTly19He7BCA.gif" );/* White background */
+  background-repeat : no-repeat;
+  background-position: center;
+  
+  background-size: cover;
+  position: relative;
+}
+   /* Dark text for contrast */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+header {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: lighter; /* Lighter weight for a clean look */
+  margin-bottom: 10px;
+  color: #fff;
+}
+p {
+  color:#fff
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  background-color: #f1eded; /* Light gray background for content area */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 30px;
+}
+
+.upload-area {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dropzone {
+  border: 2px dashed #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #9b9999;
+}
+
+.dropzone p {
+  margin-bottom: 10px;
+  font-size: 16px; /* Smaller font size for a cleaner look */
+  color: #9b9999;
+  
+}
+
+.dropzone label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db; /* Blue button color */
+  color: #fff; /* White text for button */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 14px; /* Smaller font size for consistency */
+}
+
+.dropzone label:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.progress-bar {
+  height: 5px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #3498db; /* Blue progress bar color */
+  transition: width 0.5s ease-in-out;
+}
+
+.result {
+    /* Border and background */
+    border: 1px solid #d5aaaa;
+    border-radius: 5px;
+    background-color: #ebdfdf; /* Light gray background for a subtle separation */
+  
+    /* Padding and margin */
+    padding: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;  /* One column for all elements */
+    place-items:center ;
+  
+    /* Optional: Add a subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width:500px;
+  }
+
+#prediction {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: right; 
+  color:#a93232
+   /* Consistent font size */
+}
+.kk{
+  color:#99084c;
+}
+
+.hidden {
+  display: none;
+}
